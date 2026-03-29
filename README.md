@@ -2,11 +2,13 @@
 
 This repository contains my personal portfolio website, built to showcase my work and background as an Applied AI and Machine Learning Engineer.
 
-The site highlights my experience across machine learning, computer vision, scientific computing, and software engineering, with a focus on real-world projects, competitive ML work, and production-oriented development.
+The site brings together selected projects, professional experience, competition results, and the technical foundations that shape the way I build.
 
 ## About me
 
-I work at the intersection of applied machine learning and engineering. My background includes:
+I enjoy working at the intersection of machine learning, engineering, and real-world problem solving.
+
+My background includes:
 
 - machine learning and deep learning
 - computer vision
@@ -14,9 +16,9 @@ I work at the intersection of applied machine learning and engineering. My backg
 - scalable algorithm development
 - deployment and software integration
 
-I am particularly interested in building intelligent systems that are both technically strong and useful in practice.
+I am especially drawn to projects that combine technical depth, clear purpose, and strong execution.
 
-## What you’ll find on the website
+## What the website includes
 
 The portfolio presents:
 
@@ -34,8 +36,6 @@ This portfolio is built as a lightweight static website using:
 - HTML
 - CSS
 - JavaScript
-
-It is designed to be fast, simple, and easy to deploy with GitHub Pages.
 
 ## Repository contents
 
@@ -58,4 +58,4 @@ The live website is available here:
 
 ---
 
-This portfolio evolves over time as I build new projects, improve existing ones, and continue growing as an engineer.
+This portfolio evolves over time as I keep building, learning, and refining the kinds of systems I want to create.

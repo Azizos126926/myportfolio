@@ -599,3 +599,87 @@ nav a:hover,
     line-height: 1.7;
   }
 }
+
+/* === portfolio positioning refresh === */
+#bg-canvas {
+  opacity: 0.34;
+}
+
+.noise {
+  opacity: 0.025;
+}
+
+body {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef3f8 100%) !important;
+}
+
+.hero h1 {
+  max-width: 10ch;
+}
+
+.hero-text {
+  max-width: 62ch;
+}
+
+.profile-card h2,
+.section-heading h2 {
+  letter-spacing: -0.03em;
+}
+
+.status-row {
+  background: #eef5ff;
+  border: 1px solid rgba(37, 99, 235, 0.10);
+  color: #1d4ed8;
+}
+
+.filter-btn {
+  color: #475569;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.filter-btn.active {
+  color: #0f172a;
+  background: #e8eef8;
+  border-color: rgba(37, 99, 235, 0.16);
+}
+
+.primary-btn {
+  background: #0f172a;
+}
+
+.secondary-btn,
+.ghost-btn {
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.project-card {
+  min-height: 295px;
+}
+
+.project-card p {
+  font-size: 0.98rem;
+}
+
+.project-topline a {
+  color: #64748b;
+}
+
+.project-topline a:hover {
+  color: #0f172a;
+}
+
+.contact-card {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.site-footer {
+  color: #64748b;
+}
+
+@media (max-width: 760px) {
+  .contact-links {
+    justify-content: center;
+  }
+}

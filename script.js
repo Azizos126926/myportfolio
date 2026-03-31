@@ -42,7 +42,7 @@ function resizeCanvas() {
   canvas.width = window.innerWidth * devicePixelRatio;
   canvas.height = window.innerHeight * devicePixelRatio;
   ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
-  const count = Math.max(36, Math.floor(window.innerWidth / 32));
+  const count = Math.max(18, Math.floor(window.innerWidth / 70));
   particles = Array.from({ length: count }, () => ({
     x: Math.random() * window.innerWidth,
     y: Math.random() * window.innerHeight,
@@ -58,10 +58,10 @@ function drawBackground() {
     window.innerWidth * 0.5, 0, window.innerWidth * 0.85
   );
   if (body.classList.contains('light')) {
-    gradient.addColorStop(0, 'rgba(60,99,255,0.09)');
+    gradient.addColorStop(0, 'rgba(60,99,255,0.05)');
     gradient.addColorStop(1, 'rgba(243,247,255,0)');
   } else {
-    gradient.addColorStop(0, 'rgba(124,156,255,0.12)');
+    gradient.addColorStop(0, 'rgba(124,156,255,0.05)');
     gradient.addColorStop(1, 'rgba(7,17,31,0)');
   }
   ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
@@ -79,7 +79,7 @@ function drawBackground() {
 
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fillStyle = body.classList.contains('light') ? 'rgba(60,99,255,0.18)' : 'rgba(124,156,255,0.28)';
+    ctx.fillStyle = body.classList.contains('light') ? 'rgba(60,99,255,0.08)' : 'rgba(124,156,255,0.12)';
     ctx.fill();
 
     for (let j = i + 1; j < particles.length; j++) {
@@ -87,13 +87,13 @@ function drawBackground() {
       const dx = p.x - q.x;
       const dy = p.y - q.y;
       const d = Math.hypot(dx, dy);
-      if (d < 110) {
+      if (d < 80) {
         ctx.beginPath();
         ctx.moveTo(p.x, p.y);
         ctx.lineTo(q.x, q.y);
         ctx.strokeStyle = body.classList.contains('light')
-          ? `rgba(60,99,255,${0.08 - d / 2000})`
-          : `rgba(124,156,255,${0.12 - d / 1500})`;
+          ? `rgba(60,99,255,${0.03 - d / 4000})`
+          : `rgba(124,156,255,${0.05 - d / 2500})`;
         ctx.stroke();
       }
     }

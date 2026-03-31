@@ -203,8 +203,10 @@ body.light .site-header { background: rgba(244, 247, 252, 0.82); }
   padding: 28px;
 }
 
-.emphasis-card {
-  background: linear-gradient(180deg, rgba(132, 163, 255, 0.06), transparent 28%), var(--surface-strong);
+.emphasis-card h2 {
+  font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+  line-height: 1.08;
+  margin-bottom: 16px;
 }
 
 .profile-card h2, .section-heading h2 {

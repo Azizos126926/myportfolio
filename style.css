@@ -431,3 +431,8 @@ body.light .status-row { color: #0a5c4c; }
   .glass-card, .contact-card { padding: 22px; }
   .hero h1 { max-width: 10ch; }
 }
+.hero-panel .emphasis-card h2 {
+  font-size: 1.8rem !important;
+  line-height: 1.08 !important;
+  color: red !important;
+}

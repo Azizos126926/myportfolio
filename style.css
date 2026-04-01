@@ -432,7 +432,10 @@ body.light .status-row { color: #0a5c4c; }
   .hero h1 { max-width: 10ch; }
 }
 .hero-panel .emphasis-card h2 {
-  font-size: 1.8rem !important;
+  font-size: clamp(1.5rem, 2vw, 2.2rem) !important;
   line-height: 1.08 !important;
-  color: red !important;
+  letter-spacing: -0.02em;
+  margin: 14px 0;
+  max-width: 10ch;
+  color: inherit !important;
 }

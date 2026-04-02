@@ -205,8 +205,8 @@ button {
 
 .hero h1 {
   margin-top: 12px;
-  max-width: 12ch;
-  font-size: clamp(3rem, 6.2vw, 5.6rem);
+  max-width: 11ch;
+  font-size: clamp(3.4rem, 7vw, 6.5rem);
   font-weight: 800;
 }
 
@@ -502,16 +502,6 @@ button {
   gap: 14px;
 }
 
-.project-card-featured {
-  border-color: rgba(120, 187, 255, 0.3);
-  background:
-    linear-gradient(180deg, rgba(120, 187, 255, 0.08), rgba(255, 255, 255, 0.03)),
-    rgba(255, 255, 255, 0.04);
-  box-shadow:
-    0 20px 50px rgba(18, 35, 64, 0.28),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
-}
-
 .note-card {
   border: 1px solid var(--line);
   border-radius: 30px;
@@ -549,13 +539,13 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 118px;
+  min-width: 88px;
   padding: 9px 14px;
   border-radius: 999px;
   margin-bottom: 16px;
-  background: linear-gradient(135deg, rgba(212, 167, 44, 0.18), rgba(255, 223, 128, 0.14));
-  border: 1px solid rgba(255, 219, 120, 0.28);
-  color: #f7d978;
+  background: rgba(47, 109, 246, 0.12);
+  border: 1px solid rgba(47, 109, 246, 0.18);
+  color: var(--accent-soft);
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -679,7 +669,7 @@ button {
 
   .hero h1 {
     max-width: 9.5ch;
-    font-size: clamp(2.5rem, 13vw, 4rem);
+    font-size: clamp(2.8rem, 16vw, 4.4rem);
   }
 
   .section-heading h2,

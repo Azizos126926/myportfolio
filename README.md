@@ -1,4 +1,4 @@
-# Aziz Karaborni — Portfolio
+# Portfolio
 
 This repository contains my personal portfolio website, built to showcase my work and background as an Applied AI and Machine Learning Engineer.
 

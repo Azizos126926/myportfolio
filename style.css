@@ -688,3 +688,156 @@ button {
     font-size: 0.94rem;
   }
 }
+
+/* Theme modes */
+body[data-theme="modern"] {
+  --bg: #0a1220;
+  --bg-elevated: rgba(11, 19, 34, 0.86);
+  --surface: rgba(16, 26, 44, 0.78);
+  --surface-strong: rgba(21, 34, 57, 0.92);
+  --line: rgba(164, 191, 255, 0.12);
+  --line-strong: rgba(164, 191, 255, 0.2);
+  --text: #edf4ff;
+  --muted: #9db0cf;
+  --accent: #2f6df6;
+  --accent-soft: #73a6ff;
+  --accent-2: #58d1c9;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
+}
+
+body[data-theme="vintage"] {
+  --bg: #efe4d0;
+  --bg-elevated: rgba(247, 240, 227, 0.9);
+  --surface: rgba(248, 242, 231, 0.84);
+  --surface-strong: rgba(251, 246, 237, 0.96);
+  --line: rgba(120, 88, 62, 0.18);
+  --line-strong: rgba(120, 88, 62, 0.3);
+  --text: #2d2015;
+  --muted: #5d4a3a;
+  --accent: #88522f;
+  --accent-soft: #b27043;
+  --accent-2: #59654d;
+  --shadow: 0 20px 42px rgba(105, 74, 44, 0.12);
+}
+
+body[data-theme="vintage"] {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  background:
+    linear-gradient(180deg, rgba(112, 82, 56, 0.03), transparent 16%),
+    radial-gradient(circle at 12% 12%, rgba(176, 112, 67, 0.12), transparent 26%),
+    radial-gradient(circle at 88% 18%, rgba(89, 101, 77, 0.08), transparent 24%),
+    var(--bg);
+}
+
+body[data-theme="vintage"] .page-glow {
+  background:
+    radial-gradient(circle at 20% 18%, rgba(176, 112, 67, 0.1), transparent 28%),
+    radial-gradient(circle at 84% 24%, rgba(89, 101, 77, 0.08), transparent 22%),
+    radial-gradient(circle at 50% 100%, rgba(136, 82, 47, 0.08), transparent 30%);
+}
+
+body[data-theme="vintage"] .noise {
+  opacity: 0.08;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(48, 33, 22, 0.09) 0.6px, transparent 0.9px),
+    radial-gradient(circle at 80% 60%, rgba(48, 33, 22, 0.06) 0.6px, transparent 0.9px);
+}
+
+body[data-theme="vintage"] .site-header,
+body[data-theme="vintage"] .glass-card,
+body[data-theme="vintage"] .skills-shell,
+body[data-theme="vintage"] .metric-card,
+body[data-theme="vintage"] .note-card {
+  backdrop-filter: none;
+  box-shadow: var(--shadow);
+}
+
+body[data-theme="vintage"] .site-header {
+  border-radius: 10px;
+}
+
+body[data-theme="vintage"] .brand-mark,
+body[data-theme="vintage"] .primary-btn,
+body[data-theme="vintage"] .filter-btn.active {
+  background: linear-gradient(180deg, #b97d4f, #8a5832);
+  color: #fff7ec;
+  box-shadow: 0 10px 22px rgba(138, 88, 50, 0.18);
+}
+
+body[data-theme="vintage"] .brand-mark {
+  border-radius: 8px;
+}
+
+body[data-theme="vintage"] .ghost-btn,
+body[data-theme="vintage"] .secondary-btn,
+body[data-theme="vintage"] .filter-btn,
+body[data-theme="vintage"] .skills-cloud span,
+body[data-theme="vintage"] .chips span,
+body[data-theme="vintage"] .badge,
+body[data-theme="vintage"] .status-row,
+body[data-theme="vintage"] .medal {
+  border-radius: 8px;
+}
+
+body[data-theme="vintage"] .hero h1 span,
+body[data-theme="vintage"] .section-heading h2 em,
+body[data-theme="vintage"] .contact-card h2 {
+  font-family: "Instrument Serif", Georgia, serif;
+  color: var(--accent);
+}
+
+body[data-theme="vintage"] .eyebrow,
+body[data-theme="vintage"] .card-label,
+body[data-theme="vintage"] .timeline-meta,
+body[data-theme="vintage"] .panel-kicker,
+body[data-theme="vintage"] .brand-text,
+body[data-theme="vintage"] .nav a,
+body[data-theme="vintage"] .header-link,
+body[data-theme="vintage"] .ghost-btn {
+  letter-spacing: 0.08em;
+}
+
+body[data-theme="vintage"] .hero h1,
+body[data-theme="vintage"] .section-heading h2,
+body[data-theme="vintage"] .intro-card h2,
+body[data-theme="vintage"] .contact-card h2 {
+  letter-spacing: -0.03em;
+}
+
+body[data-theme="vintage"] .intro-card::after {
+  background: radial-gradient(circle, rgba(176, 112, 67, 0.14), transparent 68%);
+}
+
+body[data-theme="vintage"] .timeline::before {
+  background: linear-gradient(var(--accent), rgba(136, 82, 47, 0));
+}
+
+body[data-theme="vintage"] .timeline-item::before {
+  background: var(--accent);
+  box-shadow: 0 0 0 8px rgba(176, 112, 67, 0.12);
+}
+
+body[data-theme="vintage"] .filter-btn,
+body[data-theme="vintage"] .secondary-btn,
+body[data-theme="vintage"] .ghost-btn {
+  background: rgba(255, 251, 244, 0.75);
+}
+
+body[data-theme="vintage"] .primary-btn:hover,
+body[data-theme="vintage"] .secondary-btn:hover,
+body[data-theme="vintage"] .ghost-btn:hover,
+body[data-theme="vintage"] .filter-btn:hover {
+  transform: translateY(-1px);
+}
+
+body[data-theme="vintage"] .metric-card strong,
+body[data-theme="vintage"] .project-card h3,
+body[data-theme="vintage"] .note-card h3,
+body[data-theme="vintage"] .about-grid h3,
+body[data-theme="vintage"] .achievement-grid h3,
+body[data-theme="vintage"] .education-grid h3,
+body[data-theme="vintage"] .reference-grid h3,
+body[data-theme="vintage"] .timeline-item h3 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+}

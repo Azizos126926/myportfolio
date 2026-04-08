@@ -12,12 +12,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-theme="modern">
   <canvas id="bg-canvas" aria-hidden="true"></canvas>
   <div class="page-glow" aria-hidden="true"></div>
   <div class="noise" aria-hidden="true"></div>
@@ -31,14 +31,14 @@
     <nav class="nav" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Work</a>
       <a href="#achievements">Results</a>
-      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <div class="header-actions">
       <a class="header-link" href="CV_Aziz_Karaborni.pdf" target="_blank" rel="noopener">CV</a>
-      <button id="theme-toggle" class="ghost-btn" type="button" aria-label="Toggle color theme">Theme</button>
+      <button id="theme-toggle" class="ghost-btn" type="button" aria-label="Switch between modern and vintage themes">Vintage mode</button>
     </div>
   </header>
 
@@ -46,13 +46,10 @@
     <section class="hero section">
       <div class="hero-copy reveal">
         <h1>
-          Building machine learning systems that feel
-          <span>sharp, useful, and production-minded.</span>
+          Machine learning engineer building <span>useful systems for hard problems.</span>
         </h1>
         <p class="hero-text">
-          <article class="metric-card">
-              <span>  I’m an Applied Machine Learning Engineer with experience tackling complex problems across computer vision, LLMs, and virtual reality. My work is centered on building reliable systems, with a strong emphasis on evaluation, robustness, and delivery; currently, at BIOVIA, I work on industrial ML problems involving dataset shift, adaptation, and deployment-minded evaluation.
-            </article>
+          I’m an Applied Machine Learning Engineer working across computer vision, LLMs, and simulation-heavy systems. I care about evaluation, robustness, and delivery, and I currently work on industrial ML problems at BIOVIA with a focus on dataset shift, adaptation, and deployment-minded thinking.
         </p>
 
         <div class="hero-actions">
@@ -60,12 +57,20 @@
           <a class="secondary-btn" href="CV_Aziz_Karaborni.pdf" target="_blank" rel="noopener">Open CV</a>
         </div>
 
-        <p class="hero-text">
+        <div class="hero-metrics">
           <article class="metric-card">
-            <strong>End-to-End Across Hard Domains</strong>
-            <span>From industrial software and forecasting to scientific ML and vision competitions, I ramp fast and deliver across technically demanding environments.</span>
+            <strong>Range</strong>
+            <span>Vision, LLMs, forecasting, scientific ML, and real-time systems.</span>
           </article>
-        </p>
+          <article class="metric-card">
+            <strong>Approach</strong>
+            <span>From framing and evaluation to integration, performance, and delivery.</span>
+          </article>
+          <article class="metric-card">
+            <strong>Environment</strong>
+            <span>Comfortable in industrial, scientific, and product-facing settings.</span>
+          </article>
+        </div>
       </div>
 
       <div class="hero-panel reveal delay-1">

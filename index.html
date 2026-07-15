@@ -13,8 +13,10 @@
 <body>
 
 <header class="hero">
+  <div class="mark">AK</div>
   <h1>Aziz Karaborni</h1>
   <p class="role">Machine learning engineer</p>
+  <p class="skills">Python · C++ · C# · PyTorch · CUDA</p>
   <nav class="links">
     <a href="mailto:aziz.karaborni@yahoo.fr">Email</a>
     <a href="https://github.com/Azizos126926" target="_blank" rel="noopener">GitHub</a>
@@ -31,8 +33,10 @@
       <h2>HomeFIT — room-aware product discovery</h2>
       <span class="tag">Solo product</span>
     </div>
-    <p>Upload a room photo, get catalog products reranked by visual style, color, and room fit, refined through a conversational agent.</p>
-    <p class="stack">SigLIP 2 · YOLOv8 · FAISS · FastAPI · Next.js</p>
+    <p>Upload a room photo and HomeFIT extracts its visual style, dominant palette, and detected furniture, then retrieves and reranks a merchant catalog by visual fit, color harmony, and room-profile alignment. A conversational agent handles refinement in natural language ("show cheaper ones", "find lamps for this room"). Built solo end-to-end with a hand-labeled evaluation benchmark across 39 room types against a 1,224-product catalog.</p>
+    <p class="metric">76.9% hit rate @ k=5 · 61.5% top-1 hit rate · 0% zero-result rate</p>
+    <p class="stack">Python · PyTorch · SigLIP 2 · YOLOv8 · FAISS · FastAPI · Next.js · Docker</p>
+    <a class="link" href="https://github.com/Azizos126926/homefit" target="_blank" rel="noopener">Repo →</a>
   </article>
 
   <article class="project">
@@ -40,8 +44,9 @@
       <h2>Image Matching Challenge 2025</h2>
       <span class="tag">Kaggle · top 14%</span>
     </div>
-    <p>Full-pipeline image matching: dense features, keypoint detection, matching, geometric verification.</p>
-    <p class="stack">DINOv2 · ALIKED · LightGlue</p>
+    <p>A medal-level image matching pipeline combining learned dense features, keypoint detection, matching, and geometric verification — a full-pipeline vision project balancing model choice, retrieval quality, and geometric robustness.</p>
+    <p class="metric">Ranked top 140 globally out of ~1,000 teams</p>
+    <p class="stack">Python · PyTorch · DINOv2 · ALIKED · LightGlue · OpenCV</p>
     <a class="link" href="https://github.com/Azizos126926/Image-matching-2025" target="_blank" rel="noopener">Repo →</a>
   </article>
 
@@ -50,8 +55,9 @@
       <h2>Hydropower Climate Optimisation</h2>
       <span class="tag">Zindi · gold, top 5</span>
     </div>
-    <p>Multivariate forecasting for hydropower optimization.</p>
-    <p class="stack">XGBoost · Time Series · Feature Engineering</p>
+    <p>Built multivariate forecasting models for hydropower optimization using time-series modeling and feature engineering, with disciplined validation design under noisy real-world conditions.</p>
+    <p class="metric">Top 5 out of 1,000+ participants</p>
+    <p class="stack">Python · XGBoost · Pandas · NumPy · scikit-learn</p>
     <a class="link" href="https://github.com/Azizos126926/power-challenger" target="_blank" rel="noopener">Repo →</a>
   </article>
 
@@ -60,8 +66,9 @@
       <h2>Amini Cocoa Contamination Challenge</h2>
       <span class="tag">Zindi · silver, top 9%</span>
     </div>
-    <p>Mobile-friendly computer vision model for cocoa leaf disease detection.</p>
-    <p class="stack">YOLO · Computer Vision</p>
+    <p>Developed a mobile-efficient YOLO-based computer vision model for cocoa leaf disease detection, optimized for deployment on low-resource mobile hardware.</p>
+    <p class="metric">Ranked 26th out of 300 teams</p>
+    <p class="stack">Python · PyTorch · YOLO · OpenCV</p>
     <a class="link" href="https://zindi.africa/competitions/amini-cocoa-contamination-challenge" target="_blank" rel="noopener">Challenge →</a>
   </article>
 
@@ -70,8 +77,9 @@
       <h2>Nexar Dashcam Crash Prediction</h2>
       <span class="tag">Kaggle · top 18%</span>
     </div>
-    <p>Early collision prediction from dashcam video using visual backbones and temporal modeling.</p>
-    <p class="stack">EfficientNet · LSTM/GRU · 3D CNN</p>
+    <p>Built early collision prediction models from dashcam video, combining visual backbones with temporal modeling to catch crash risk before impact — a perception problem where both timing and system design matter.</p>
+    <p class="metric">Top 40 out of 250 participants</p>
+    <p class="stack">Python · PyTorch · EfficientNet · LSTM/GRU · 3D CNN</p>
     <a class="link" href="https://github.com/Azizos126926/NexarDashcam-Crash-Prediction-Challenge" target="_blank" rel="noopener">Repo →</a>
   </article>
 
@@ -80,8 +88,9 @@
       <h2>Stanford RNA 3D Folding 2025</h2>
       <span class="tag">Kaggle · bronze, top 10%</span>
     </div>
-    <p>RNA 3D structure prediction on a biologically complex dataset.</p>
-    <p class="stack">Structure Prediction · Biological Data</p>
+    <p>Tackled a biologically complex RNA 3D structure prediction challenge, ramping up quickly in a deep scientific domain with strong empirical execution.</p>
+    <p class="metric">Ranked top 135 globally</p>
+    <p class="stack">Python · PyTorch · NumPy · Pandas</p>
     <a class="link" href="https://github.com/Azizos126926/Stanford-RNA-3D-Folding" target="_blank" rel="noopener">Repo →</a>
   </article>
 
@@ -90,8 +99,9 @@
       <h2>Scalable Kernel Inversion</h2>
       <span class="tag">Scientific computing</span>
     </div>
-    <p>Hierarchical low-rank approximations for kernel methods — Gaussian processes, kernel ridge regression, kernel PCA.</p>
-    <p class="stack">HPC · Kernel Methods · CUDA</p>
+    <p>Thesis-linked work on hierarchical low-rank approximations for kernel methods, combining mathematical structure with computational efficiency and low-level implementation detail — applied to Gaussian processes, kernel ridge regression, and kernel PCA.</p>
+    <p class="metric">20–30% speed-up over baseline kernel methods</p>
+    <p class="stack">C++ · Python · CUDA · OpenMP · MPI</p>
     <a class="link" href="https://github.com/Azizos126926/gofmm_swig_python" target="_blank" rel="noopener">Repo →</a>
   </article>
 
